@@ -103,6 +103,20 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Spinner
+        android:id="@+id/spinner_ordem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_data_fechamento"
+        app:layout_constraintEnd_toEndOf="@id/et_data_fechamento"
+        app:layout_constraintStart_toStartOf="@id/et_data_fechamento"
+        android:background="@drawable/background_spinner"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:entries="@array/ordens"
+        />
+
     <Button
         android:id="@+id/btn_criar_ordem"
         android:layout_width="0dp"

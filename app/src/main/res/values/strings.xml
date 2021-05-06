@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">OrdensServico</string>
     <string name="imagem_logo">Imagem logo</string>
+
+    <string-array name="ordens">
+        <item>ABERTO</item>
+        <item>PENDENTE</item>
+        <item>FECHADO</item>
+    </string-array>
 </resources>
