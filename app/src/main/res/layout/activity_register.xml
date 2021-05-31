@@ -18,13 +18,13 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
         >
+
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Nome do cliente"
-            android:inputType="text"
-            android:textSize="18sp"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nome do usuário"
+                android:inputType="text"
+                android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout

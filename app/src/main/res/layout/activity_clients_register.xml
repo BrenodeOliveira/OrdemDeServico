@@ -52,13 +52,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         >
+
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="E-mail do cliente"
-            android:inputType="textEmailAddress"
-            android:textSize="18sp"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="E-mail do cliente"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -73,13 +73,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         >
+
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Telefone para contato"
-            android:inputType="textEmailAddress"
-            android:textSize="18sp"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Telefone para contato"
+                android:inputType="phone"
+                android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

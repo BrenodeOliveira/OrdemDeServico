@@ -1,5 +1,6 @@
 package com.example.ordensservico.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ordensservico.R;
-import com.example.ordensservico.services.User;
+import com.example.ordensservico.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -38,12 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_password_again = findViewById(R.id.et_password_again);
 
         Button register = findViewById(R.id.btn_register);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                registerUser();
-            }
-        });
+        register.setOnClickListener(v -> registerUser());
     }
 
     private void registerUser() {
@@ -94,11 +90,13 @@ public class RegisterActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
 
                             if (task.isSuccessful()) {
-                                Toast.makeText(RegisterActivity.this, "Usuário criado",
-                                        Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Usuário criado", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                finish();
                             }  else {
                                 Toast.makeText(RegisterActivity.this,
-                                        "Erro ao criar usuário2", Toast.LENGTH_SHORT).show();
+                                        "Erro ao criar usuário", Toast.LENGTH_SHORT).show();
                             }
 
                         }

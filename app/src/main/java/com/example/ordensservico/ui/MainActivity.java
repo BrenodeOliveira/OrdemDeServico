@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         clickBotaoConsultarOrdem();
         clickBotaoCadastrarOrdem();
         clickBotaoCadastrarCliente();
+        clickBotaoConsultarClientes();
 
         iconExit = findViewById(R.id.iv_user_exit);
 
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void clickBotaoConsultarClientes() {
+        Button btn_cliente = findViewById(R.id.btn_consultar_clientes);
+        Intent i = new Intent(this, SearchClientsActivity.class);
+        btn_cliente.setOnClickListener(v -> startActivity(i));
     }
 
     private void clickBotaoCadastrarCliente() {

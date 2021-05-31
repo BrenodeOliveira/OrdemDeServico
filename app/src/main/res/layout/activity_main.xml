@@ -46,34 +46,36 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-        android:id="@+id/iv_nicbots_main"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:src="@drawable/nicbots"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBar_feed" />
+            android:id="@+id/iv_nicbots_main"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/nicbots"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBar_feed"
+            app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
         android:id="@+id/btn_consultar_ordem"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="2dp"
         android:text="Consultar ordem de serviço"
         app:layout_constraintBottom_toTopOf="@id/btn_cadastrar_ordem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_nicbots_main" />
 
+
     <Button
         android:id="@+id/btn_cadastrar_ordem"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:text="Cadastrar ordem de serviço"
         app:layout_constraintBottom_toTopOf="@id/btn_cadastrar_cliente"
         app:layout_constraintEnd_toEndOf="@id/btn_consultar_ordem"
@@ -81,14 +83,28 @@
         app:layout_constraintTop_toBottomOf="@id/btn_consultar_ordem" />
 
     <Button
-        android:id="@+id/btn_cadastrar_cliente"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="24dp"
-        android:text="Cadastrar um cliente novo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btn_consultar_ordem"
-        app:layout_constraintStart_toStartOf="@id/btn_consultar_ordem"
-        app:layout_constraintTop_toBottomOf="@id/btn_cadastrar_ordem" />
+            android:id="@+id/btn_cadastrar_cliente"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="24dp"
+            android:text="Cadastrar um cliente novo"
+            app:layout_constraintBottom_toBottomOf="@id/btn_consultar_clientes"
+            app:layout_constraintEnd_toEndOf="@id/btn_consultar_ordem"
+            app:layout_constraintStart_toStartOf="@id/btn_consultar_ordem"
+            app:layout_constraintTop_toBottomOf="@id/btn_cadastrar_ordem"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+            android:text="Consultar Clientes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/btn_consultar_clientes"
+            app:layout_constraintStart_toStartOf="@+id/btn_cadastrar_cliente"
+            app:layout_constraintEnd_toEndOf="@+id/btn_cadastrar_cliente"
+            app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar_cliente"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
