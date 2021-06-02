@@ -2,9 +2,7 @@ package com.example.ordensservico.adapter;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,13 +15,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ordensservico.R;
 import com.example.ordensservico.model.Client;
-import com.example.ordensservico.ui.SearchClientsActivity;
 import com.example.ordensservico.ui.UpdateClientActivity;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.annotations.NotNull;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.io.Serializable;
 import java.util.List;
 
 public class ClientsAdapter extends RecyclerView.Adapter<ClientsAdapter.ViewHolder> {

@@ -1,14 +1,13 @@
 package com.example.ordensservico.ui;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
 
 import com.example.ordensservico.R;
 import com.example.ordensservico.adapter.ClientsAdapter;
@@ -18,12 +17,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import org.jetbrains.annotations.NotNull;
+import com.google.firebase.database.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class SearchClientsActivity extends AppCompatActivity {
